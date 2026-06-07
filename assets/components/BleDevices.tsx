@@ -239,21 +239,6 @@ const BleDevices = () => {
         result.forEach((characteristic: any) => {
             const characteristicUUID = characteristic.characteristic
             console.log('characteristic:' + characteristicUUID);
-            /*
-            if (characteristicUUID === "00002a01-0000-1000-8000-00805f9b34fb") {
-                readCharacteristic(characteristicUUID, serviceUUID, item)
-            }
-            if (characteristicUUID === TEMPERATURE_UUID || characteristicUUID === HUMIDITY_UUID) {
-                BleManager.startNotification(item.id, serviceUUID, characteristicUUID)
-                    .then(() => {
-                        console.log('Notification started for characteristic:', characteristicUUID);
-                    })
-                    .catch(error => {
-                        console.error('Notification error:', error);
-                    });
-            }
-                    */
-
         })
     }
 
@@ -379,7 +364,6 @@ const BleDevices = () => {
                     </Collapsible>
                 </View>
             </ScrollView>
-
         </View>
     )
 }
@@ -394,11 +378,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
     },
     header: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 16,
-    color: "#1710e0",
-  },
+        fontSize: 24,
+        fontWeight: "bold",
+        marginBottom: 16,
+        color: "#1710e0",
+        width: "98%",
+    },
     bleCard: {
         width: "98%",
         padding: 10,
