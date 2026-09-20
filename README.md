@@ -6,7 +6,7 @@ React-native ble experimental project
 From cmd prompt:
     npx expo run:android
 
-# to create an adroind release
+# to create an adroid release
 
 cd android
 ./gradlew assembleRelease
